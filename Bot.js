@@ -1,4 +1,5 @@
-const mineflayer = require('mineflayer');
+const http = require('http');
+http.createServer((req, res) => { res.writeHead(200); res.end('running'); }).listen(process.env.PORT || 3000);const mineflayer = require('mineflayer');
 const config = {
   host: 'DragonCraftSMP1.aternos.me',
   port: 59696,
